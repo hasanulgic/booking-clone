@@ -7,14 +7,12 @@ export default function Destination() {
         Most popular choices for travellers from Bangladesh
       </h2>
       <div className="grid grid-rows-1 grid-cols-2 w-full gap-6">
-        <div
-          className="text-white bg-red-400 p-4 rounded-md bg-cover bg-center h-60 w-full hover:border-2 border-[#ffb700]"
-          style={{
-            backgroundImage:
-              'url("https://cf.bstatic.com/xdata/images/city/600x600/688201.jpg?k=586e76aa55aa92d886eaf5837e288d77e15c9b81534bd4c7121d0d020e99064d&o=")',
-          }}
-        >
-          <div className="flex items-center">
+        <div className="text-white rounded-md h-60 w-full hover:border-2 border-[#ffb700] relative">
+          <img
+            className="w-full h-full object-fit absolute rounded-md mix-blend-hard-light"
+            src="https://cf.bstatic.com/xdata/images/city/600x600/688201.jpg?k=586e76aa55aa92d886eaf5837e288d77e15c9b81534bd4c7121d0d020e99064d&o="
+          />
+          <div className="absolute top-4 left-4 flex items-center">
             <h1 className="text-2xl font-bold inline-block">Dhaka</h1>
             <img
               src="https://flagsapi.com/BD/flat/32.png"

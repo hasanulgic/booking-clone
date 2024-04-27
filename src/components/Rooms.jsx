@@ -1,8 +1,37 @@
+/* eslint-disable react/prop-types */
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#003580",
+        marginRight: 28,
+        borderRadius: 10,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+var settings = {
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+};
+
 export default function Rooms() {
   return (
     <div className="max-w-[1280px] mx-auto">
       <h1 className="text-2xl font-bold mb-3">Browse by property type</h1>
-      <div className="grid grid-rows-1 grid-cols-4 w-full gap-6">
+      <Slider {...settings}>
         <div>
           <img
             className="rounded-md w-full"
@@ -35,7 +64,7 @@ export default function Rooms() {
           />
           <h2 className="font-bold mt-2">Villas</h2>
         </div>
-      </div>
+      </Slider>
     </div>
   );
 }

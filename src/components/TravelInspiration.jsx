@@ -8,14 +8,13 @@ export default function TravelInspiration() {
         <p className="text-primary text-sm">More</p>
       </div>
       <div className="grid grid-rows-1 grid-cols-4 w-full gap-4">
-        <div
-          className="rounded-lg bg-cover bg-center h-80 col-span-2"
-          style={{
-            backgroundImage:
-              'url("https://eu-images.contentstack.com/v3/assets/bltbebdf496526c3cfd/blt16ced51b2db94410/656d7cd924c853040a0ac5de/1174-004.jpg")',
-          }}
-        >
-          <div className="p-4 text-white font-bold pt-56">
+        <div className="col-span-2 bg-gradient-to-br from-slate-600 to-slate-700 relative rounded-lg">
+          <img
+            className="object-cover h-full w-full absolute mix-blend-overlay rounded-lg"
+            src="https://eu-images.contentstack.com/v3/assets/bltbebdf496526c3cfd/blt16ced51b2db94410/656d7cd924c853040a0ac5de/1174-004.jpg"
+            alt="new-year"
+          />
+          <div className="absolute bottom-1 p-3 text-white font-bold">
             <h1 className="font-bold text-xl">
               New Year’s Eve in New York City
             </h1>
@@ -25,6 +24,7 @@ export default function TravelInspiration() {
             </p>
           </div>
         </div>
+
         <div className="rounded-lg">
           <img
             className="rounded-md h-52 w-full"
