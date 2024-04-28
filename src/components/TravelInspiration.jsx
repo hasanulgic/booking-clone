@@ -1,11 +1,11 @@
 export default function TravelInspiration() {
   return (
-    <div className="max-w-[1280px] mx-auto mb-20">
-      <div className="flex justify-between my-2">
-        <h1 className="text-2xl font-bold my-4">
+    <div className="max-w-[1280px] mx-auto mb-8 sm:mb-20 px-2 sm:px-0">
+      <div className="flex justify-between items-center my-2">
+        <h1 className="text-base sm:text-2xl font-bold my-4">
           Get inspiration for your next trip
         </h1>
-        <p className="text-primary text-sm">More</p>
+        <p className="text-primary text-[10px] sm:text-sm">More</p>
       </div>
       <div className="grid grid-rows-1 grid-cols-4 w-full gap-4">
         <div className="col-span-2 bg-gradient-to-br from-slate-600 to-slate-700 relative rounded-lg">
@@ -15,10 +15,10 @@ export default function TravelInspiration() {
             alt="new-year"
           />
           <div className="absolute bottom-1 p-3 text-white font-bold">
-            <h1 className="font-bold text-xl">
+            <h1 className="font-bold text-base sm:text-xl">
               New Year’s Eve in New York City
             </h1>
-            <p className="text-sm mt-2">
+            <p className="text-[10px] sm:text-sm mt-2">
               New Year Eve in New York City Ring in the new year with iconic
               moments and unforgettable memories in New York City
             </p>
@@ -32,7 +32,7 @@ export default function TravelInspiration() {
             alt="room1"
           />
           <div className="px-2 py-3">
-            <h1 className="font-bold mt-2">
+            <h1 className="text-sm sm:text-base font-bold mt-2">
               6 best ryokans in Japan to rejuvenate yourself
             </h1>
             <h2 className="text-deem text-sm mt-2">
@@ -47,7 +47,7 @@ export default function TravelInspiration() {
             alt="room1"
           />
           <div className="px-2 py-3">
-            <h1 className="font-bold mt-2">
+            <h1 className="text-sm sm:text-base font-bold mt-2">
               6 best ryokans in Japan to rejuvenate yourself
             </h1>
             <h2 className="text-deem text-sm mt-2">

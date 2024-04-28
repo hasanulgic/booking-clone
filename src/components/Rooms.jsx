@@ -30,7 +30,7 @@ var settings = {
 export default function Rooms() {
   return (
     <div className="max-w-[1280px] mx-auto">
-      <h1 className="text-2xl font-bold mb-3">Browse by property type</h1>
+      <h1 className="text-base sm:text-2xl font-bold mb-3 px-2 sm:px-0">Browse by property type</h1>
       <Slider {...settings}>
         <div>
           <img

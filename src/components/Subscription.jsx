@@ -1,8 +1,10 @@
 export default function Subscription() {
   return (
     <div className="bg-[#00224F] text-center">
-      <h1 className="text-2xl text-white font-bold pt-10">Stay in the know</h1>
-      <h2 className="text-white my-2">
+      <h1 className="text-xl sm:text-2xl text-white font-bold pt-10">
+        Stay in the know
+      </h1>
+      <h2 className="text-white my-2 text-xs sm:text-base">
         Sign up to get marketing emails from Booking.com, including promotions,
         rewards, travel experiences and information about Booking.com’s and{" "}
         <br />
@@ -10,11 +12,11 @@ export default function Subscription() {
       </h2>
       <div className="flex justify-center gap-2 mx-auto my-2">
         <input
-          className="bg-white py-3 px-2 rounded-lg w-1/3 text-[#6b6b6b]"
+          className="bg-white sm:py-3 px-2 rounded-lg w-1/3 text-[#6b6b6b] text-sm sm:text-base"
           placeholder="Your email address"
           type="email"
         />
-        <button className="bg-[#0057b8] text-white px-6 py-2 rounded-md">
+        <button className="bg-[#0057b8] text-white px-6 py-2 rounded-md text-sm sm:text-base">
           Subscribe
         </button>
       </div>
@@ -27,7 +29,7 @@ export default function Subscription() {
           List your property
         </button>
         <hr />
-        <ul className="flex text-white justify-center gap-4 font-bold py-4 underline">
+        <ul className="flex flex-wrap text-white justify-center gap-2 sm:gap-4 font-bold py-4 underline">
           <li>Mobile Version</li>
           <li>Yuor account</li>
           <li>Make changes to your booking online</li>
