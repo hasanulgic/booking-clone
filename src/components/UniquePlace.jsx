@@ -1,3 +1,38 @@
+/* eslint-disable react/prop-types */
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#003580",
+        marginRight: 28,
+        borderRadius: 10,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+var settings = {
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+  responsive: [
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 export default function UniquePlace() {
   return (
     <div className="max-w-[1280px] mx-auto mb-10 px-2 sm:px-0">
@@ -7,7 +42,9 @@ export default function UniquePlace() {
       <h2 className="text-deem text-xs sm:text-base mb-2">
         From castles and villas to boats and igloos, we have got it all
       </h2>
-      <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6">
+      {/* <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6"> */}
+      <div className="slider-container">
+        <Slider {...settings}>
         <div className="shadow-2xl rounded-lg">
           <img
             className="rounded-t-md"
@@ -51,6 +88,7 @@ export default function UniquePlace() {
             </h2>
           </div>
         </div>
+
         <div className="shadow-2xl rounded-lg">
           <img
             className="rounded-t-md"
@@ -70,6 +108,7 @@ export default function UniquePlace() {
             </h2>
           </div>
         </div>
+
         <div className="shadow-2xl rounded-lg">
           <img
             className="rounded-t-md"
@@ -91,6 +130,7 @@ export default function UniquePlace() {
             </h2>
           </div>
         </div>
+        </Slider>
       </div>
     </div>
   );

@@ -1,3 +1,38 @@
+/* eslint-disable react/prop-types */
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#003580",
+        marginRight: 28,
+        borderRadius: 10,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+var settings = {
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+  responsive: [
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 export default function GuestPlace() {
   return (
@@ -8,107 +43,118 @@ export default function GuestPlace() {
           Discover homes
         </h2>
       </div>
-      <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6">
-        <div className="shadow-2xl rounded-lg">
-          <img
-            className="rounded-t-md  h-32 sm:h-56 w-full"
-            src="https://cf.bstatic.com/xdata/images/hotel/square600/255854447.webp?k=f9c9d47f18b3156fdcc5596749d137f35e3cf4962a8d3d37d69be0066ec9bfc3&o="
-            alt="room1"
-          />
-          <div className="px-1 sm:px-3 pb-2">
-            <h1 className="text-sm sm:text-base font-bold mt-2">
-              Aparthotel Stare Miasto
-            </h1>
-            <h2 className="text-deem text-[10px] sm:text-xs">
-              Old Town, Poland, Kraków
-            </h2>
-            <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
-              9.1
-            </button>
-            <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
-              Fabulous · 2,841 reviews
-            </h2>
-            <h3 className="text-right text-[10px] sm:text-xs mt-6">
-              Starting from{" "}
-              <span className="font-bold text-xs sm:text-base">BDT 16,302</span>
-            </h3>
+      {/* <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6"> */}
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div className="shadow-2xl rounded-lg">
+            <img
+              className="rounded-t-md  h-32 sm:h-56 w-full"
+              src="https://cf.bstatic.com/xdata/images/hotel/square600/255854447.webp?k=f9c9d47f18b3156fdcc5596749d137f35e3cf4962a8d3d37d69be0066ec9bfc3&o="
+              alt="room1"
+            />
+            <div className="px-1 sm:px-3 pb-2">
+              <h1 className="text-sm sm:text-base font-bold mt-2">
+                3 Epoques Apartments by Adrez
+              </h1>
+              <h2 className="text-deem text-[10px] sm:text-xs">
+                Old Town, Poland, Kraków
+              </h2>
+              <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
+                9.1
+              </button>
+              <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
+                Fabulous · 2,841 reviews
+              </h2>
+              <h3 className="text-right text-[10px] sm:text-xs mt-6">
+                Starting from{" "}
+                <span className="font-bold text-xs sm:text-base">
+                  BDT 16,302
+                </span>
+              </h3>
+            </div>
           </div>
-        </div>
-        <div className="shadow-2xl rounded-lg">
-          <img
-            className="rounded-t-md h-32 sm:h-56 w-full"
-            src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o="
-            alt="room1"
-          />
-          <div className="px-1 sm:px-3 pb-2">
-            <h1 className="text-sm sm:text-base font-bold mt-2">
-              3 Epoques Apartments by Adrez
-            </h1>
-            <h2 className="text-deem text-[10px] sm:text-xs">
-              Prague 1, Czech Republic, Praha 1
-            </h2>
-            <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
-              9.3
-            </button>
-            <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
-              Nice · 428 reviews
-            </h2>
-            <h3 className="text-right text-[10px] sm:text-xs mt-6">
-              Starting from{" "}
-              <span className="font-bold text-xs sm:text-base">BDT 10,252</span>
-            </h3>
+          <div className="shadow-2xl rounded-lg">
+            <img
+              className="rounded-t-md h-32 sm:h-56 w-full"
+              src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o="
+              alt="room1"
+            />
+            <div className="px-1 sm:px-3 pb-2">
+              <h1 className="text-sm sm:text-base font-bold mt-2">
+                3 Epoques Apartments by Adrez
+              </h1>
+              <h2 className="text-deem text-[10px] sm:text-xs">
+                Prague 1, Czech Republic, Praha 1
+              </h2>
+              <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
+                9.3
+              </button>
+              <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
+                Nice · 428 reviews
+              </h2>
+              <h3 className="text-right text-[10px] sm:text-xs mt-6">
+                Starting from{" "}
+                <span className="font-bold text-xs sm:text-base">
+                  BDT 10,252
+                </span>
+              </h3>
+            </div>
           </div>
-        </div>
-        <div className="shadow-2xl rounded-lg">
-          <img
-            className="rounded-t-md h-32 sm:h-56 w-full"
-            src="https://cf.bstatic.com/xdata/images/hotel/square600/121402222.webp?k=f7f266ab09f90ddea4464309eca14d79429afe4218ced6887cb52f82c42c03dc&o="
-            alt="room1"
-          />
-          <div className="px-1 sm:px-3 pb-2">
-            <h1 className="text-sm sm:text-base font-bold mt-2">
-              7Seasons Apartments Budapest
-            </h1>
-            <h2 className="text-deem text-[10px] sm:text-xs">
-              United Kingdom, Isle Of Skye
-            </h2>
-            <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
-              8.7
-            </button>
-            <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
-              Superb · 251 reviews
-            </h2>
-            <h3 className="text-right text-[10px] sm:text-xs mt-6">
-              Starting from{" "}
-              <span className="font-bold text-xs sm:text-base">BDT 16,302</span>
-            </h3>
+          <div className="shadow-2xl rounded-lg">
+            <img
+              className="rounded-t-md h-32 sm:h-56 w-full"
+              src="https://cf.bstatic.com/xdata/images/hotel/square600/121402222.webp?k=f7f266ab09f90ddea4464309eca14d79429afe4218ced6887cb52f82c42c03dc&o="
+              alt="room1"
+            />
+            <div className="px-1 sm:px-3 pb-2">
+              <h1 className="text-sm sm:text-base font-bold mt-2">
+                7Seasons Apartments Budapest
+              </h1>
+              <h2 className="text-deem text-[10px] sm:text-xs">
+                United Kingdom, Isle Of Skye
+              </h2>
+              <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
+                8.7
+              </button>
+              <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
+                Superb · 251 reviews
+              </h2>
+              <h3 className="text-right text-[10px] sm:text-xs mt-6">
+                Starting from{" "}
+                <span className="font-bold text-xs sm:text-base">
+                  BDT 16,302
+                </span>
+              </h3>
+            </div>
           </div>
-        </div>
-        <div className="shadow-2xl rounded-lg">
-          <img
-            className="rounded-t-md h-32 sm:h-56 w-full"
-            src="https://cf.bstatic.com/xdata/images/hotel/square600/73220198.webp?k=62588a8129bafa49162b4cdfd8af8f8018c42b8628090650a1cb9e4d4041c467&o="
-            alt="room1"
-          />
-          <div className="px-1 sm:px-3 pb-2">
-            <h1 className="text-sm sm:text-base font-bold mt-2">
-              7Seasons Apartments Budapest
-            </h1>
-            <h2 className="text-deem text-[10px] sm:text-xs">
-              Finland, Lillandet
-            </h2>
-            <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
-              9.6
-            </button>
-            <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
-              Excellent · 537 reviews
-            </h2>
-            <h3 className="text-right text-[10px] sm:text-xs mt-6">
-              Starting from{" "}
-              <span className="font-bold text-xs sm:text-base">BDT 26,752</span>
-            </h3>
+          <div className="shadow-2xl rounded-lg">
+            <img
+              className="rounded-t-md h-32 sm:h-56 w-full"
+              src="https://cf.bstatic.com/xdata/images/hotel/square600/73220198.webp?k=62588a8129bafa49162b4cdfd8af8f8018c42b8628090650a1cb9e4d4041c467&o="
+              alt="room1"
+            />
+            <div className="px-1 sm:px-3 pb-2">
+              <h1 className="text-sm sm:text-base font-bold mt-2">
+                7Seasons Apartments Budapest
+              </h1>
+              <h2 className="text-deem text-[10px] sm:text-xs">
+                Finland, Lillandet
+              </h2>
+              <button className="bg-primary text-[10px] sm:text-xs p-1 rounded-r-md rounded-t-md text-white inline-block">
+                9.6
+              </button>
+              <h2 className="text-deem text-[10px] sm:text-xs inline-block ms-2">
+                Excellent · 537 reviews
+              </h2>
+              <h3 className="text-right text-[10px] sm:text-xs mt-6">
+                Starting from{" "}
+                <span className="font-bold text-xs sm:text-base">
+                  BDT 26,752
+                </span>
+              </h3>
+            </div>
           </div>
-        </div>
+        </Slider>
       </div>
     </div>
   );
