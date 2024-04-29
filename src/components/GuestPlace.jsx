@@ -46,7 +46,7 @@ export default function GuestPlace() {
       {/* <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6"> */}
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="shadow-2xl rounded-lg">
+          <div className="border-2 rounded-lg">
             <img
               className="rounded-t-md  h-32 sm:h-56 w-full"
               src="https://cf.bstatic.com/xdata/images/hotel/square600/255854447.webp?k=f9c9d47f18b3156fdcc5596749d137f35e3cf4962a8d3d37d69be0066ec9bfc3&o="
@@ -73,7 +73,7 @@ export default function GuestPlace() {
               </h3>
             </div>
           </div>
-          <div className="shadow-2xl rounded-lg">
+          <div className="border-2 rounded-lg">
             <img
               className="rounded-t-md h-32 sm:h-56 w-full"
               src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o="
@@ -100,7 +100,7 @@ export default function GuestPlace() {
               </h3>
             </div>
           </div>
-          <div className="shadow-2xl rounded-lg">
+          <div className="border-2 rounded-lg">
             <img
               className="rounded-t-md h-32 sm:h-56 w-full"
               src="https://cf.bstatic.com/xdata/images/hotel/square600/121402222.webp?k=f7f266ab09f90ddea4464309eca14d79429afe4218ced6887cb52f82c42c03dc&o="
@@ -127,7 +127,7 @@ export default function GuestPlace() {
               </h3>
             </div>
           </div>
-          <div className="shadow-2xl rounded-lg">
+          <div className="border-2 rounded-lg">
             <img
               className="rounded-t-md h-32 sm:h-56 w-full"
               src="https://cf.bstatic.com/xdata/images/hotel/square600/73220198.webp?k=62588a8129bafa49162b4cdfd8af8f8018c42b8628090650a1cb9e4d4041c467&o="
