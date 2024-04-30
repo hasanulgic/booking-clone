@@ -6,7 +6,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function Hero() {
   return (
     <header className="bg-primary">
-      <div className="max-w-[1280px] mx-auto h-96 sm:h-60 relative p-4 sm:p-0">
+      <div className="container h-96 sm:h-60 relative p-4 sm:p-0">
         <div className="py-4 sm:py-16">
           <h1 className="text-white text-3xl sm:text-5xl font-extrabold">
             Find your next stay

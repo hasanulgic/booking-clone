@@ -1,7 +1,7 @@
 
 export default function Offers() {
   return (
-    <div className="max-w-[1280px] mx-auto my-14 px-2 sm:px-0">
+    <div className="container my-14 px-2 sm:px-0">
       <h1 className="text-xl sm:text-2xl font-bold">Offers</h1>
       <h2 className="text-deem my-2 text-xs sm:text-base">
         Promotions, deals and special offers for you

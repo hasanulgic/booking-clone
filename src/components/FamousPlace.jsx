@@ -36,7 +36,7 @@ var settings = {
 
 export default function FamousPlace() {
   return (
-    <div className="max-w-[1280px] mx-auto my-2 px-2 sm:px-0">
+    <div className="container my-2 px-2 sm:px-0">
       <h1 className="sm:text-2xl font-bold my-2">Find things to do in...</h1>
       {/* <div className="grid grid-rows-1 grid-cols-4 w-full gap-2 sm:gap-6"> */}
       <div className="slider-container">

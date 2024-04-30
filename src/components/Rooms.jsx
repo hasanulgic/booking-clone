@@ -38,11 +38,11 @@ var settings = {
 
 export default function Rooms() {
   return (
-    <div className="max-w-[1280px] mx-auto">
+    <div className="container">
       <h1 className="text-base sm:text-2xl font-bold mb-3 px-2 sm:px-0">
         Browse by property type
       </h1>
-      <div className="slider-container">
+      <div className="slider-container px-2 sm:px-0">
         <Slider {...settings}>
           <div>
             <img

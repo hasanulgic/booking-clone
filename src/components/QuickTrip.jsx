@@ -4,7 +4,7 @@ import { GiSelfLove } from "react-icons/gi";
 
 export default function QuickTrip() {
   return (
-    <div className="max-w-[1280px] mx-auto my-6 px-2 sm:px-0">
+    <div className="container my-6 px-2 sm:px-0">
       <h1 className="text-base sm:text-2xl font-bold">
         Quick and easy trip planner
       </h1>

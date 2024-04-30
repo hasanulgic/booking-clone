@@ -1,7 +1,7 @@
 
 export default function Destination() {
   return (
-    <div className="max-w-[1280px] mx-auto my-6 px-2 sm:px-0">
+    <div className="container my-6 px-2 sm:px-0">
       <h1 className="text-base sm:text-2xl font-bold">Trending destinations</h1>
       <h2 className="text-xs sm:text-base text-deem my-2">
         Most popular choices for travellers from Bangladesh

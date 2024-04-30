@@ -9,7 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Nav() {
   return (
     <nav className="w-full bg-primary">
-      <div className="max-w-[1280px] mx-auto">
+      <div className="container">
         <div className="flex justify-between items-center py-4 px-4 sm:px-0">
           <h1 className="text-white text-xl sm:text-2xl font-bold">
             Booking.com

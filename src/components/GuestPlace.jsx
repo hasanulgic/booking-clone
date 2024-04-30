@@ -36,7 +36,7 @@ var settings = {
 
 export default function GuestPlace() {
   return (
-    <div className="max-w-[1280px] mx-auto mb-2 px-2 sm:px-0">
+    <div className="container mb-2 px-2 sm:px-0">
       <div className="flex justify-between items-center my-2">
         <h1 className="text-base sm:text-2xl font-bold">Homes guests love</h1>
         <h2 className="text-primary text-[10px] sm:text-sm font-medium">

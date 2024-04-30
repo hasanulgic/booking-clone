@@ -35,7 +35,7 @@ var settings = {
 };
 export default function UniquePlace() {
   return (
-    <div className="max-w-[1280px] mx-auto mb-10 px-2 sm:px-0">
+    <div className="container mb-10 px-2 sm:px-0">
       <h1 className="text-base sm:text-2xl font-bold">
         Stay at our top unique properties
       </h1>
